@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopZone - Discover quality products at amazing prices.">
+    <title>ShopZone | Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                Shop<span>Zone</span>
+            </a>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                    aria-label="Search products"
+                >
+                <button id="searchButton" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <button class="cart-button" id="cartButton">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Cart</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <span class="hero-tag">WELCOME TO SHOPZONE</span>
+
+                <h1>
+                    Discover Your
+                    <span>Perfect Style</span>
+                </h1>
+
+                <p>
+                    Explore amazing products, enjoy exclusive deals,
+                    and experience shopping like never before.
+                </p>
+
+                <a href="#products" class="shop-button">
+                    Shop Now
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-circle">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>BIG SALE</span>
+                    <strong>UP TO 50% OFF</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container feature-grid">
+
+            <div class="feature-item">
+                <i class="fas fa-truck"></i>
+                <div>
+                    <h3>Free Shipping</h3>
+                    <p>On selected orders</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>Safe transactions</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-headset"></i>
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>Here to help you</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <main class="container products-section" id="products">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">OUR COLLECTION</span>
+                <h2>Featured Products</h2>
+                <p>Find something you'll love.</p>
+            </div>
+        </div>
+
+        <div id="productContainer" class="product-grid">
+            <p class="loading-message">Loading amazing products...</p>
+        </div>
+
+        <p id="noProducts" class="no-products" hidden>
+            No products found. Try another search!
+        </p>
+
+    </main>
+
+    <!-- Shopping Cart Panel -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> Your Cart</h2>
+            <button id="closeCart" class="close-cart" aria-label="Close cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <strong id="cartTotal">₹0.00</strong>
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Proceed to Checkout
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <a href="#" class="logo footer-logo">
+                <i class="fas fa-shopping-bag"></i>
+                Shop<span>Zone</span>
+            </a>
+
+            <p>
+                Your one-stop destination for quality products and
+                amazing shopping experiences.
+            </p>
+
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 ShopZone. All Rights Reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
